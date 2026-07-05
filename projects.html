@@ -100,10 +100,60 @@
         #logg-a {
             color: #fff;
         }
+                /* =========================================
+   Update Banner Styles (New Website Notice)
+   ========================================= */
+.update-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #e63946, #d90429);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 9999; /* رقم عالي جداً لضمان ظهوره فوق كل شيء */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.update-banner a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.update-banner a:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* تعديل مساحة اللافتة في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .update-banner {
+        font-size: 14px;
+        padding: 8px 10px;
+        gap: 8px;
+    }
+}
     </style>
 </head>
 
 <body>
+    <div class="update-banner">
+        <span>🚀 تم إطلاق نسخة أحدث وأكثر تطوراً من موقعي!</span>
+        <a href="https://ahmedabdalgayed.vercel.app/" target="_blank" rel="noopener noreferrer">انتقل إلى الموقع الجديد</a>
+    </div>
 
     <!-- Navbar -->
     <div class="navbar">
